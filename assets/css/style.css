@@ -9,7 +9,10 @@ header {
     opacity: .75;
     color: black;
 }   
-
+.main-box {
+    background-color: lightslategray;
+    opacity: .75;
+}
 .title {
     font-family: 'Cabin Sketch';
     font-size: 48pt;
@@ -27,7 +30,14 @@ header {
 .main-text {
     font-family: "Lobster";
     font-size: 30pt;
-    color: white;
+    color: red;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fight {
+    font-family: "Lobster";
+    font-size: 30pt;
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 }
 
