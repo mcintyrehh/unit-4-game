@@ -1,7 +1,8 @@
 body {
-    background-image: url("../images/alley.jpg");
+    background-image: url("../images/cloudy-day.png");
     width: 100%;
     height: 100%;
+    
 }
 
 header {
@@ -22,9 +23,10 @@ header {
 .miny-text {
     font-style: italic;
 }
-.fighter {
+.card {
     width: 275px;
     margin: 15px;
+    border: 4px solid white;
 }
 
 .hp {
@@ -50,7 +52,19 @@ header {
 .lost {
     font-family: "Lobster";
     font-size: 80pt;
-    color: red;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: black;
+    background-color: red;
+    /* text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
     
+}
+.winner {
+    font-family: "Lobster";
+    font-size: 30pt;
+    color: black;
+    /* text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
+    text-align: center;
+}
+.winner-card {
+    background-color: green;
+    font-size: 80pt;
 }
