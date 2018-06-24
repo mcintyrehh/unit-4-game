@@ -27,6 +27,13 @@ header {
     margin: 15px;
 }
 
+.hp {
+    font-family: "Lobster";
+    font-size: 25pt;
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 .main-text {
     font-family: "Lobster";
     font-size: 30pt;
@@ -35,9 +42,15 @@ header {
 }
 .fight {
     font-family: "Lobster";
-    font-size: 30pt;
+    font-size: 50pt;
     color: red;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-}
 
+.lost {
+    font-family: "Lobster";
+    font-size: 80pt;
+    color: red;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    
+}

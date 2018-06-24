@@ -19,65 +19,67 @@
     <header class="d-flex justify-content-center">
         <div class="title ">Street Animal RPG!</div>
     </header>
-        <section class="col-md-12 d-flex flex-wrap justify-content-center text-center">
-                <div class="card fighter raccoon">
+    <div class="d-flex justify-content-center main-text top-text">Pick your character</div>
+        <section class="col-md-12 d-flex flex-wrap justify-content-center text-center resetting">
+              
+                <button value="150" class="card fighter raccoon">
                     <img class="card-img-top" src="assets/images/raccoon.jpg" alt="raccoon card">
                     <div class="card-body">
-                        <h5 class="card-title">Rusty Raccoon</h5>
+                        <h5 class="card-title name">Rusty Raccoon</h5>
+                        <h5 class="card-title hp raccoon-hp">150 hp</h5>
                         <p class="card-text">This little rascal has seen his fair share of alleyway tussels</p>
                         <p class="card-text"><small class="text-muted miny-text">Last showered 7 months ago</small></p>
                     </div>
-                </div>
-                <div class="card fighter ibis">
-                        <img class="card-img-top" src="assets/images/ibis.jpg" alt="ibis card">
-                        <div class="card-body">
-                            <h5 class="card-title">Indiscriminate Ibis</h5>
-                            <p class="card-text">This bin chicken was once a magestic wetlands creature...once...</p>
-                            <p class="card-text"><small class="text-muted miny-text">Last showered 3 months ago</small></p>
-                        </div>
-                </div>
-                <div class="card fighter rat">
-                        <img class="card-img-top" src="assets/images/rat.jpg" alt="rat card">
-                        <div class="card-body">
-                            <h5 class="card-title">Ratachooie</h5>
-                            <p class="card-text">Don't let this guys small stature fool you, he once took out most of Europe</p>
-                            <p class="card-text"><small class="text-muted miny-text">Last showered 9 months ago</small></p>
-                        </div>
-                </div>
-                <div class="card fighter seagull">
-                        <img class="card-img-top" src="assets/images/seagull.jpg" alt="seagull card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sewerwater Seagull</h5>
-                            <p class="card-text">The original sky rat, is that food? or a cigarette butt? One in the same to this champ.</p>
-                            <p class="card-text"><small class="text-muted miny-text">Last showered 2 months ago</small></p>
-                        </div>
-                </div>
-        </section>
-        <div class="d-flex justify-content-center main-text top-text">Pick your character</div>
-        <div class="d-flex justify-content-center battleground">    
-            <div id="fighter-box">    
-                <!-- <div class="card fighter ibis">
+                </button>
+                <button class="card fighter ibis" value="120">
+                    <img class="card-img-top" src="assets/images/ibis.jpg" alt="ibis card">
+                    <div class="card-body">
+                        <h5 class="card-title name">Indiscriminate Ibis</h5>
+                        <h5 class="card-title hp ibis-hp">120 hp</h5>
+                        <p class="card-text">This bin chicken was once a magestic wetlands creature...once...</p>
+                        <p class="card-text"><small class="text-muted miny-text">Last showered 3 months ago</small></p>
+                    </div>
+                </button>
+                <button class="card fighter rat" value="90">
+                    <img class="card-img-top" src="assets/images/rat.jpg" alt="rat card">
+                    <div class="card-body">
+                        <h5 class="card-title name">Ratachooie</h5>
+                        <h5 class="card-title hp rat-hp">90 hp</h5>
+                        <p class="card-text">Don't let this guys small stature fool you, he once took out most of Europe</p>
+                        <p class="card-text"><small class="text-muted miny-text">Last showered 9 months ago</small></p>
+                    </div>
+                </button>
+                  
+                <button id="seagull" class="card fighter seagull" value="100">
                     <img class="card-img-top" src="assets/images/seagull.jpg" alt="seagull card">
                     <div class="card-body">
-                        <h5 class="card-title">Sewerwater Seagull</h5>
-                        <p class="card-text">The original sky rat, is that food? or a cigarette butt? One in the same to this champ.</p>
+                        <h5 class="card-title name">Sewerwater Seagull</h5>
+                        <h5 class="card-title hp seagull-hp">100 hp</h5>
+                        <p class="card-text">The original sky rat, is that food? or a cigarette butt? One and the same to this champ.</p>
                         <p class="card-text"><small class="text-muted miny-text">Last showered 2 months ago</small></p>
                     </div>
-                </div> -->
+                </button>
+       </section>
+        <div class="main-text text-center bottom-text"></div>
+        <div class="d-flex justify-content-center text-center battleground">    
+            <div id="fighter-box">    
+
             </div>
-            <div class="fight my-auto"> <!-- "Fight" --> </div>
+            <div class="fight my-auto"></div>
             <div id="enemy-box">
                
             </div>
         </div>
-        <div class="main-text d-flex justify-content-center text-center">Enemies available for attack</div>
+        <div class="main-text d-flex justify-content-center text-center"><!-- Enemies available for attack --></div>
             <section class="col-md-12 d-flex flex-wrap justify-content-center text-center">
 
             </section>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"> </script>
+    <!-- jQuery plugin for rotate function-->
+    <script src="https://cdn.rawgit.com/wilq32/jqueryrotate/master/jQueryRotate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"> </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="assets/javascript/game.js"></script>
