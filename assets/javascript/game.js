@@ -9,6 +9,7 @@ $( document ).ready(function() {
     var enemyHP;
     var playerHP;
     var playerAP = 5;
+    var enemyAP = 9;
     var enemyAP = 6;
     var enemiesKilled = 0;
     var myName;
@@ -72,6 +73,7 @@ $( document ).ready(function() {
         myFighter = 0;
         enemyFighter = 0;
         playerAP = 5;
+        enemyAP = 9;
         enemiesKilled = 0;
         $("#fighter-box, #enemy-box, .fight, .bottom-text").empty();
         $(".top-text").text("Pick your character");
@@ -83,8 +85,9 @@ $( document ).ready(function() {
     onClick();
 
     $('.fight').on("click", function () {
+        
         if (!isGameOver && isEnemyChosen) {
-            playerHP = playerHP - 9;
+            playerHP = playerHP - enemyAP;
             enemyHP = enemyHP - playerAP;
             playerAP = playerAP + 3;   
             $('.my-HP').text(playerHP + " hp");
